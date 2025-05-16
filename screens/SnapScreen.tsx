@@ -60,7 +60,7 @@ export default function SnapScreen() {
         name: "photo.jpg",
         type: "image/jpeg",
       });
-      fetch("https://faceup-backend-six-plum.vercel.app/upload", {
+      fetch("https://faceup-backend-psi-ten.vercel.app/upload", {
         method: "POST",
         body: formData,
       })
