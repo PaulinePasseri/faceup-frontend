@@ -53,7 +53,6 @@ export default function SnapScreen() {
     const photo: CameraCapturedPicture | undefined = await cameraRef.current?.takePictureAsync({
       quality: 0.3,
     });
-		if (!photo?.uri) return
     if (photo) {
       const formData: any = new FormData();
       formData.append("photoFromFront", {
